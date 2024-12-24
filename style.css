@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+body{
+    background: #000;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.list{
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+}
+.list__top{
+    border-radius: 16px 16px 0 0;
+    background: #3c3c3cb9;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+}
+h1{
+    color: rgba(255, 255, 255, 0.937);
+}
+button{
+    border: none;
+    padding: 8px 16px;  
+    background: lightgreen;
+    cursor: pointer;
+}   
+button:hover{
+    background: rgb(129, 209, 129);
+
+}
+#item__edit{
+    background: #0997c6;
+}
+#item__edit:hover{
+    background: #058ab6;
+
+}
+#item__delete{
+    background: #c30909;
+}
+#item__delete:hover{
+    background: #a10606;
+
+}
+.list__content{
+    border-radius: 0 0 16px 16px;
+    background: #3c3c3cb9;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 80%;
+    overflow-y: auto;
+    scrollbar-color: #fff #000;
+    scrollbar-width: 5px
+}
+.item{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    background: #01041d;
+    padding: 15px;
+    border-radius: 8px;
+    gap: 10px;
+}
+.item__title{
+    width: 90%;
+    height: 100%;
+    padding: 8px;
+    background: lightcoral;
+    color: #000;
+    font-size: 14px;
+}
+.box{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+.popUp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.popUp__content{
+    padding: 10px;
+    width: 400px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    gap: 10px;
+}
+.title{
+    width: 100%;
+    min-height: 150px;
+    resize: none;
+    padding: 5px;
+    scrollbar-width: none;
+}
